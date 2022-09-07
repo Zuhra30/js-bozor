@@ -20,3 +20,15 @@ elForm.addEventListener("submit", function(e) {
 });
 
 
+var elCheckInput = document.querySelector(".js-input");
+var elCheckBtn = document.querySelector("#js-btn");
+var elCheckResult = document.querySelector(".js-result");
+
+
+
+elCheckBtn.addEventListener("click", ()=> {
+    var checkInputValue = elCheckInput.value;
+    var checkResult = thinks.includes(checkInputValue);
+    checkResult ? elCheckResult.textContent = "Bor" : elCheckResult.textContent = "Yo'q"
+})
+
